@@ -1,0 +1,388 @@
+@charset "UTF-8";
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:#d8cbab;
+}
+.logo{
+    display: block;
+    max-width: 50px;
+    font-weight: 900;
+    font-size: 20px;
+}
+.navbar{
+    display: flex;
+    padding: 10px 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar i{
+    display: none;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+.navbar ul{
+    display: flex;
+    gap: 50px;
+    padding-right: 100px;
+}
+.navbar ul li{
+    list-style-type: none;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+}
+.navbar a:hover{
+    font-weight: 100;
+    color: white;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    padding: 10px 30px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container img{
+    height: 600px;
+    width: 600px;
+    border: none;
+    animation: raise 12s ease-in-out infinite;
+}
+@keyframes raise{
+    0%,100%{
+        transform: scale(1);
+    }50%{
+        transform: scale(1.1);
+        transition: ease-in-out 0.9s;
+        filter: drop-shadow(-10px -8px 0px);
+    }
+}
+.left{
+    display: block;
+    max-width: 400px;
+}
+.left h1{
+    font-family:'Cinzel', serif;
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+h1 span{
+    font-family:'Cinzel', serif;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+.left p{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+.turbine-section{
+
+    padding: 80px 50px;
+}
+.turbine-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+.turbine-image img{
+    height: 600px;
+    width: auto;
+    border: 2px solid #444;
+    box-shadow: 0 0 20px rgba(255,255,255,0.05);
+}
+.turbine-text{
+    max-width: 500px;
+    font-family: 'Cormorant Garamond', serif;
+}
+.turbine-label{
+    display: block;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    font-size: 19px;
+    letter-spacing: 0.1em;
+    color: #c94c4c;
+    margin-bottom: 10px;
+}
+.turbine-text h2{
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin-bottom: 20px;
+}
+.turbine-specs span{
+    display: block;
+    margin-top: 5px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    color: #b97c1f;
+}
+.dossiers-section {
+    background-color: #181818;
+    color: #e0d7c1;
+    padding: 80px 50px;
+    font-family: 'Cormorant Garamond', serif;
+}
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.lore-text{
+    font-size: 18px;
+    word-spacing: 0.2rem;
+}
+.section-header .label {
+    font-family: 'Cinzel', serif;
+    color: #c94c4c;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+.section-header h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+.dossiers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+.dossier-card {
+    background-color: #1f1f1f;
+    border: 2px solid #444;
+    padding: 20px;
+    max-width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.dossier-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+}
+.dossier-card img {
+    width: 300px;
+    object-fit: cover;
+    height: 200px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+}
+.dossier-card h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.dossier-specs span {
+    display: block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    color: #b0a38f;
+}
+.foundry-section {
+    background-color: #121212;
+    color: #e0d7c1;
+    padding: 80px 50px;
+}
+
+.foundry-grid {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.foundry-unit {
+    border: 2px solid #444;
+    padding: 25px;
+    max-width: 300px;
+    background: #1a1a1a;
+}
+.foundry-unit img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    border: 1px solid #555;
+    margin-bottom: 15px;
+}
+.foundry-unit h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.foundry-unit span {
+    display: block;
+    margin-top: 15px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    color: #b97c1f;
+}
+.scripture-section {
+    background-color: #d8cbab;
+    padding: 100px 60px;
+    color: #111;
+}
+.scripture-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    max-width: 1200px;
+    margin: auto;
+}
+.scripture-text {
+    max-width: 500px;
+    font-family: 'Cormorant Garamond', serif;
+}
+.scripture-text .label {
+    font-family: 'Cinzel', serif;
+    color: #c94c4c;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+.scripture-text h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 42px;
+    letter-spacing: 0.08em;
+    margin-bottom: 20px;
+}
+.scripture-text h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 22px;
+    letter-spacing: 0.05em;
+    margin-bottom: 15px;
+}
+.scripture-text p {
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+.scripture-image img {
+    width: 650px;
+    height: 650px;
+    max-width: 100%;
+    border: 2px solid #444;
+    object-fit: contain;
+}
+.relics-section {
+    background-color: #181818;
+    color: #e0d7c1;
+    padding: 80px 50px;
+}
+.relics-grid {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.relic-card {
+    background-color: #1f1f1f;
+    border: 2px solid #444;
+    padding: 20px;
+    max-width: 300px;
+}
+.relic-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border: 1px solid #555;
+    margin-bottom: 15px;
+}
+.relic-card h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.relic-card span {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    color: #c94c4c;
+}
+.factions-section {
+    background-color: #d8cbab;
+    padding: 80px 50px;
+    color: #111;
+}
+.factions-grid {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.faction-card {
+    max-width: 280px;
+    border: 2px solid #444;
+    padding: 20px;
+    background: #f0e6c8;
+    text-align: center;
+}
+.faction-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border: 2px solid #444;
+    margin-bottom: 15px;
+}
+.faction-card h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+    .navbar{
+        display: flex;
+        align-items: center;
+    }
+    .navbar ul li{
+        display: none;
+    }
+    .navbar i{
+        display: block;
+        font-size: 20px;
+        font-weight: 900;
+    }
+    .container{
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container img{
+        height: 350px;
+        width: 350px;
+        margin-bottom: 100px;
+    }
+    .turbine-container{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        margin-top: 100px;
+        flex-grow: 1;
+    }
+    .turbine-image img{
+        height: 350px;
+        width: 350px;
+    }
+    .scripture-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .scripture-image img {
+        width: 100%;
+        height: 80vh;
+    }
+}
